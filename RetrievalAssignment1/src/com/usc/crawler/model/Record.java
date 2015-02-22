@@ -11,9 +11,14 @@ public class Record {
 	String digestMD5;
 
 	
-	public Record(String url)
-	{
+	public Record(int recordId, String url,String parseText,String title,String contentMetadata,String digestMD5,String parseMetadata)
+	{   this.recordId=recordId;
 		this.url=url;
+		this.parseText=parseText;
+		this.title=title;
+		this.contentMetadata=contentMetadata;
+		this.digestMD5=digestMD5;
+		this.parseMetadata=parseMetadata;
 	}
 	
 	public String getDigestMD5() {
