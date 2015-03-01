@@ -1,5 +1,10 @@
 package com.usc.crawler.model;
 
+/**
+ * Bean Class which holds
+ * individual records
+ * 
+ */
 public class Record {
 
 	int recordId;
@@ -9,18 +14,39 @@ public class Record {
 	String contentMetadata;
 	String parseMetadata;
 	String digestMD5;
-
-	
-	public Record(int recordId, String url,String parseText,String title,String contentMetadata,String digestMD5,String parseMetadata)
-	{   this.recordId=recordId;
-		this.url=url;
-		this.parseText=parseText;
-		this.title=title;
-		this.contentMetadata=contentMetadata;
-		this.digestMD5=digestMD5;
-		this.parseMetadata=parseMetadata;
+	long clength;
+    boolean exactMatch;
+    
+	public Record(int recordId, String url, String parseText, String title,
+			String contentMetadata, String digestMD5, String parseMetadata,
+			long clength, boolean exactMatch) {
+		this.recordId = recordId;
+		this.url = url;
+		this.parseText = parseText;
+		this.title = title;
+		this.contentMetadata = contentMetadata;
+		this.digestMD5 = digestMD5;
+		this.parseMetadata = parseMetadata;
+		this.clength = clength;
+		this.exactMatch=exactMatch;
 	}
-	
+
+	public boolean isExactMatch() {
+		return exactMatch;
+	}
+
+	public void setExactMatch(boolean exactMatch) {
+		this.exactMatch = exactMatch;
+	}
+
+	public void setClength(int clength) {
+		this.clength = clength;
+	}
+
+	public long getClength() {
+		return clength;
+	}
+
 	public String getDigestMD5() {
 		return digestMD5;
 	}
