@@ -155,7 +155,7 @@ public class ExactDuplicates {
 	 */
 	public static void compareToAllRecords(Record parent) {
 		ArrayList<Record> similarRc = new ArrayList<Record>();
-		//System.out.println(parent.getRecordId());
+		
 		
 		for (Record rc : allRecords) {
 

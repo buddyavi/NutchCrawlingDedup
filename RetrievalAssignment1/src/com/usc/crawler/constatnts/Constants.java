@@ -22,7 +22,7 @@ public class Constants {
 	public static final String OUTPUT_FILE_NAME_EXACT = "exact_duplicates/exact_duplicates_nsidc_selenium";
 	
 	//Output file for Near Duplicates , produces output in same format
-	public static final String OUTPUT_FILE_NAME_NEAR = "near_duplicates/near_duplicates_nsidc_selenium";
+	public static final String OUTPUT_FILE_NAME_NEAR = "near_duplicates/near_duplicates_nsidc_selenium1";
 	
 	
 

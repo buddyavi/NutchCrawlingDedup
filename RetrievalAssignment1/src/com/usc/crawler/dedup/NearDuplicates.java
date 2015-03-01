@@ -182,7 +182,7 @@ public class NearDuplicates {
 				if ((containCount > notFoundCount)
 						&& (containCount > threshold) && (notFoundCount > 0) ) {
                      rc.setExactMatch(true);
-                	 System.out.println(rc.getUrl());
+                	 
                 	similarRc.add(rc);
 				}
 				if (similarRc.size() > 0) {
